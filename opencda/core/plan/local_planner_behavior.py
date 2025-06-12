@@ -89,8 +89,8 @@ class LocalPlanner(object):
     # Minimum distance to target waypoint as a percentage
     # (e.g. within 80% of total distance)
 
-    def __init__(self, agent, carla_map, config_yaml):
-        self._vehicle = agent.vehicle
+    def __init__(self, vehicle, carla_map, config_yaml):
+        self._vehicle = vehicle
         self._map = carla_map
 
         self._ego_pos = None
